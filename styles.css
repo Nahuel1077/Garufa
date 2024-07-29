@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Milonga";
+    background: url("img/1366_2000.jpeg");
+    background-attachment: fixed;
+    backdrop-filter: brightness(50%);
+}
+/* Fonts */
+@font-face {
+    font-family: "PlaywriteAr-Regular";
+    src: url("fonts/PlaywriteAR-Regular.ttf");
+    
+   }
+   .navbar-brand{
+    font-family: "PlaywriteAr-Regular"
+   }
+
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+ 
+/* Navbar */
+#navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 10px 0px;
+    z-index: 3;
+}
+
+.collapse.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    align-items: flex-end;
+}
+
+
+/* Frontpage */
+
+.frontpageCoffee{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: 1px 1px 30px 20px black;
+}
+
+.frontpageText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frontpageText p{
+    position: absolute;
+    padding: 25% 0% 0% 0%;
+    font-size: xx-large;
+    font-family: 'PlaywriteAr-Regular';
+    opacity: 0%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 550px;
+}
+
+.frontpageText p:hover{
+    opacity: 50%;
+    transition: ease-in-out 1s;
+}
+
+.frontpageImg{
+    height: 550px;
+    object-fit: cover;
+    width: 100%;
+    object-position: 0% 60%;
+}
+
+/* Best Sellers */
+
+.bestSellersTitle{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.bestSellersTitle h2{
+    font-family: "Milonga";
+}
+
+/* Cards */
+
+.productsGrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    margin: 30px 0px;
+}
+
+.card-body a{
+    background-color: #6e3019;
+    border: #6e3019;
+}
+
+.btn:hover{
+    background-color: #6e3019 !important;
+    border: #6e3019 !important;
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+h2{
+    margin-bottom: 0;
+    font-family: "Milonga";
+    color: white !important;
+}
+/* Products */
+.productsTitle{
+    margin: 40px 0px 0px 0px;
+}
+
+.productsTitle h2{
+    text-align: center;
+}
+
+.productsGrid{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.card{
+    box-shadow: 1px 1px 50px 20px black;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: ease 1s;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title{
+    font-family: "PlaywriteAr-Regular";
+}
+
+.card-text{
+    text-align: justify;
+    font-family: "Milonga";
+}
+
+/* Carousel */
+
+.carousel-caption{
+    font-family: "Milonga";
+}
+
+.carousel.slide{
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer{
+    background-color: #ffffff52;
+}
+
+.socialMediaTitle{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 0px 0px;
+}
+
+.socialMediaTitle h2{
+    font-family: "Milonga";
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0px;
+    justify-content: space-evenly;
+}
+
+.instagram{
+    background-image: linear-gradient(180deg, #515BD4, #8134AF, #DD2A7B, #F58529,#FEDA77 );
+    height: 100px;
+    height: 90px;
+    border-radius: 35%;
+}
+
+.instagram:hover{
+    opacity: 70%;
+    transition: ease-in-out 0.7s;
+}
+
+.instagram a img{
+    height: 102px;
+    bottom: 6px;
+    position: relative;
+}
+
+.gmail{
+    background-color: red;
+    height: 80px;
+    border-radius: 15%;
+}
+
+.gmail:hover{
+    opacity: 70%;
+    transition: ease-in-out 0.7s;
+}
+
+.gmail a img{
+    height: 116px;
+    position: relative;
+    top: -16px;
+}
+
+.sectionsFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    font-family: "Milonga";
+}
+
+.lista:hover{
+    text-decoration: underline;
+    transition: ease 2.7s;
+}
+
+.lista a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+}
+
+.sectionsFooter p{
+    font-family: "Milonga";
+    margin: 30px 0px 20px 0px;
+    color: white;
+}
+
+/* Contacto */
+.formTitle{
+    text-align: center;
+    font-family: "Milonga";
+    color: white;
+}
+
+.form{
+    margin: 0px 0px 30px 0px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    align-content: center;
+}
+
+.input{
+    margin: 20px 0px 0px 0px;
+    background-color: #00000061;
+    border: 1px solid white;
+    color: white;
+}
+
+#textarea{
+    margin: 20px 0px 20px 0px;
+    background-color: transparent;
+    border: 1px solid white;
+    height: 130px;
+    color: white;
+}
+
+#btnSubmit{
+    color: white;
+    background-color: gray;
+    width: 80px;
+    left: 47%;
+    position: relative;
+}
+
+.textHistory{
+    color: white;
+    padding: 0% 10%;
+    text-align: justify;
+    font-family: "Milonga";
+}
+
+/* Pedidos */
+.pedidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pedidosElement{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5%;
+    background-color: #000000a1;
+}
+
+.pedidosElement img{
+    height: 200px;
+    width: 200px;
+    object-fit: scale-down;
+}
+
+.pedidoElementInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2%;
+    width: 40%;
+}
+
+.pedidoElementInfo h5{
+    color: white;
+    font-family: "PlaywriteAR-Regular";
+}
+
+.pedidoElementInfo p{
+    text-align: justify;
+    color: white;
+    font-family: "Milonga";
+}
+
+.pedidosElement form{
+    padding-left: 30%;
+}
+
+.pedidosElement form input{
+    width: 37px;
+}
+
+.pedidosSubmit{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btnPedidos{
+    width: 110px;
+}
+
+/* Responsive */
+
+@media (max-width:450px){
+    /* Cover presentation */
+    .frontpageCoffee {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        height: 550px;
+    }
+
+    .frontpageText{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 550px;
+    }
+
+    .frontpageText p{
+        position: absolute;
+        padding: 30% 0% 55% 0%;
+        font-size: xx-large;
+        font-family: 'PlaywriteAr-Regular';
+        opacity: 0%;
+        color: white;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+    }
+
+    .frontpageImg {
+        object-position: 40% 0%;
+        object-fit: cover;
+        width: 100%;
+        height: 550px;
+    }
+
+    /* background image */
+    body{
+        background-size: 750px 600px;
+    }
+
+    /* form */
+    .form form{
+    width: 100%;
+    align-content: normal;
+    }
+
+    #btnSubmit{
+        margin: 0% 0% 0% 20%;
+    }
+    /*Pedidos*/
+    .pedidosElement {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .pedidoElementInfo{
+        width: 100%;
+        margin: 2%;
+    }
+
+    .pedidosElement form{
+        padding: 0%;
+    }
+
+    .pedidosElement form input{
+        margin: 20px 0px;
+    }
+
+}
+
+@media (min-width:451px) and (max-width: 699px){
+    .form form{
+        width: 100%;
+        align-content: normal;
+    }
+    .pedidosElement {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .pedidoElementInfo{
+        width: 100%;
+        margin: 2%;
+    }
+
+    .pedidosElement form{
+        padding: 0%;
+    }
+
+    .pedidosElement form input{
+        margin: 20px 0px;
+    }
+}
+
+@media (min-width: 700px){
+    .productsGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .carousel.slide{
+        height: 700px;
+    }
+
+    .carousel-inner {
+        height: 700px;
+    }
+
+    .carousel-item {
+    height: 700px;
+    }
+
+    .carousel-item img{
+        height: 700px;
+        object-fit: scale-down;
+    }
+
+    .carousel-caption.d-md-block{
+        width: 50%;
+        left: 25%;
+    }
+
+    .carousel-control-prev{
+        width: 44% !important;
+    }
+
+    .carousel-control-next{
+        width: 44% !important;
+    }
+
+    /* background image */
+    body{
+        background-size: 900px 700px;;
+    }
+
+    /* form */
+    .form form{
+        width: 100%;
+        align-content: normal;
+    }
+
+    /*Pedidos*/
+    .pedidosElement form {
+        padding-left: 20%;
+    }
+
+}
+
+@media (min-width: 900px){
+    .productsGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .carousel.slide{
+        height: 700px;
+    }
+
+    .carousel-inner {
+        height: 700px;
+    }
+
+    .carousel-item {
+        height: 700px;
+    }
+
+    .carousel-item img{
+        height: 700px;
+        object-fit: scale-down;
+    }
+
+    .carousel-caption.d-md-block{
+        width: 50%;
+        left: 25%;
+    }
+
+    .carousel-control-prev{
+        width: 44% !important;
+    }
+
+    .carousel-control-next{
+        width: 44% !important;
+    }
+    
+    /* background image */
+    body{
+        background-size: 1300px 1000px;
+    }
+
+    /* Form */
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form form{
+        width: 55%;
+        align-content: normal;
+    }
+
+    /* Pedidos */
+    .pedidosElement form {
+        padding-left: 30%;
+    }
+}
+
+@media (min-width:1248px){
+    .carousel-control-prev{
+        width: 60% !important;
+    }
+
+    .carousel-control-next{
+        width: 60% !important;
+    }
+
+    /* background image */
+    body{
+        background-size: 2000px 1700px;
+    }
+
+    /* form */
+    .form form{
+        width: 55%;
+        align-content: normal;
+    }
+}
